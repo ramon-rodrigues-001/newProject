@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0A0A0A;
+    background: url('https://static.vecteezy.com/ti/vetor-gratis/p1/696278-texturizado-fundo-preto-gratis-vetor.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    /* background-color: #191919; */
+    background-color: rgba(255, 255, 255, 0.040);
+    border: solid 1px white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 2px rgb(0, 0, 0);
+    width: 100%;
+    max-width: 400px;
+    margin: 40px 20px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.input-group input {
+    font-size: .9em;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #33ef33;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 14px;
+    background-color: #33ef33;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 1em; font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #28d428;
+}
+
+
+
+.progress-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #33ef33;
+}
+
+.progress-indicator .step {
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #0A0A0A;
+    border: 2px solid #33ef33;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-indicator .step.active {
+    background-color: #33ef33;
+    color: #000;
+}
+
+.progress-indicator .divider {
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <!-- <h2>Welcome ;)</h2> -->
+
+        <div class="progress-indicator">
+            <span class="step active">1</span>
+            <span class="divider">----------</span>
+            <span class="step">2</span>
+        </div>
+
+
+        <form class="login-form">
+            <div class="input-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Digite seu nome" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" placeholder="Digite seu CPF" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+            </div>
+            
+            <!-- <div class="input-group">
+                <label for="confirm-password">Confirmar Senha</label>
+                <input type="password" id="confirm-password" placeholder="Confirme sua senha" required>
+            </div> -->
+            
+            <button type="submit">Prosseguir</button>
+        </form>
+    </div>
+</body>
+</html>

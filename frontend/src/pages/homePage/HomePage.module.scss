@@ -1,0 +1,399 @@
+/* Variáveis */
+$primary-color: #33ef33;
+$secondary-color: #0A0A0A;
+$background-color: #191919;
+$font-color: white;
+$font-family: Arial, sans-serif;
+
+
+/* Estilos globais */
+* {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  color: $font-color;
+  scrollbar-width: auto; /* Largura da barra de rolagem (thin, auto, none) */
+  scrollbar-color: rgba(51, 239, 51, 0.208) #0A0A0A;
+}
+
+/* Container geral */
+.container {
+
+  .above_the_fold {
+    background-image: linear-gradient(to bottom, transparent, rgba(22, 22, 22, 0.432));
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    max-height: 800px;
+
+    * {
+      font-weight: bold;
+    }
+
+    .videoBackground {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    /* Header */
+    .headerHome {
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        font-size: 1.5em;
+        padding: 20px 40px;
+        // width: 270px;
+      }
+
+      #select_indioma {
+        font-size: 1em;
+        background-color: rgb(0, 0, 0);
+        padding: 0px 20px;
+        border: solid 1px rgba(255, 255, 255, 0.162);
+        border-radius: 5px;
+        margin: 20px 40px 0px 0px;
+        height: 30px;
+      }
+    }
+
+    /* Main */
+    .mainHome {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row-reverse;
+      padding: 0px 30px;
+      max-width: 1300px;
+      width: 100%;
+      margin: auto;
+
+      .esquerda {
+        font-size: 12px;
+        
+        // .opcoes_de_login {
+        //   background-color: transparent;
+        //   cursor: pointer;
+        //   padding: 10px 15px;
+        //   border: solid 2px rgb(255, 255, 255);
+        //   border-radius: 7px;
+        //   margin: 10px 6px 0px 0px;
+        //   transition: 0.3s;
+
+        //   &:hover {
+        //     scale: 1.07;
+        //     background-color: rgb(28, 28, 28);
+        //     border-radius: 3px;
+        //   }
+        // }
+
+        label {
+          font-size: 1.2em;
+          display: block;
+          padding: 17px 0px 8px 0px;
+        }
+
+        input {
+          background-color: transparent;
+          padding: 10px;
+          border: solid 2px rgb(255, 255, 255);
+          border-radius: 7px;
+          width: 100%;
+        }
+      }
+
+      .direita {
+        .title {
+          padding: 30px 20px 0px 20px;
+          max-width: 500px;
+          font-size: 2.1em;
+          color: rgb(94, 255, 0);
+        }
+        .subTitle {
+            padding: 10px 20px;
+            max-width: 500px;
+            font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* Hero pagina de Passo A Passo*/
+.hero {
+  background-color: $secondary-color;
+  text-align: center;
+  padding: 55px 20px;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .subTitleHero {
+    font-size: 1.2em;
+    max-width: 700px;
+    padding-bottom: 20px;
+    margin: auto;
+  }
+
+  .ctaButton {
+    background-color: $primary-color;
+    padding: 8px 20px;
+    border-radius: 5px;
+  }
+
+  .passoApasso {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+
+    & .passos {
+        border: solid 1px rgba(255, 255, 255, 0.055);
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.123);
+        background-color: rgb(25, 25, 25);
+        padding: 10px;
+        /* border-radius: 40px 5px 5px 5px; */
+        border-radius: 50px;
+
+
+        & .dic {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+
+            & .circle {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(72, 255, 0);
+                color: black;
+                font-size: 1.2em;
+                font-weight: bold;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+            & .ImgPassos {
+                max-width: 150px;
+                padding-bottom: 20px;
+            }
+        }
+
+        & .descritionPasso {
+            font-size: 16px;
+            width: 250px;
+        }
+    }
+
+    & .linha {
+        width: 15%;
+        border: solid 1px white;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .passoApasso {
+      flex-direction: column;
+      padding: 50px 20px;
+      text-align: center;
+      gap: 20px;
+
+      & .passos {
+          display: flex;
+          align-items: center;
+          /* & .dic {
+              flex-direction: column;
+          } */
+
+          & .ImgPassos {
+              padding: 20px 5px 20px 20px;
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .passoApasso {
+
+      & .passos {
+          /* display: flex; */
+          flex-direction: column;
+          align-items: center;
+          /* & .dic {
+              flex-direction: column;
+          } */
+
+          & .ImgPassos {
+              max-width: 200px;
+              padding: 10px 5px 10px 10px;
+          }
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Planos */
+.planos {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #fff;
+
+  .plano {
+    background-color: $secondary-color;
+    padding: 30px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      font-size: 1.7em;
+    }
+
+    .preco {
+      font-size: 1.4em;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    ul {
+      list-style: inside;
+      padding: 0;
+      margin-bottom: 20px;
+
+      li {
+        margin-bottom: 10px;
+        font-size: 0.9em;
+      }
+    }
+
+
+    &#destaque {
+      background-color: $background-color;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.276);
+      scale: 1.1;
+    }
+  }
+}
+
+/* Diferenciais */
+.diferenciais {
+  background-color: $secondary-color;
+  padding: 60px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/* Testemunhos */
+.testemunhos {
+  background-color: $secondary-color;
+  padding: 50px 20px 60px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: $background-color;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+
+@media screen and (max-width: 740px) {
+  .container .above_the_fold .mainHome {
+    flex-direction: column-reverse;
+    // padding: 30px 0px;
+
+    .esquerda {
+      padding-top: 50px;
+      height: 9;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .planos {
+    flex-wrap: wrap;
+
+    .plano {
+      min-width: 300px;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .container {
+    font-size: 14px;
+  }
+
+  .planos {
+    flex-direction: column;
+    align-items: center;
+
+    .plano {
+      width: 99%;
+
+      &#destaque {
+        scale: 1.05;
+      }
+    }
+  }
+
+  .diferenciais {
+    padding: 40px 20px;
+  }
+
+  .testemunhos {
+    padding: 40px 20px;
+  }
+}

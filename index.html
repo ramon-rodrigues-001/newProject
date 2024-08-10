@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ass.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop muted src="./frontend/public/Fim!.mp4" id="videoBackground"></video>
+        <header>
+             <h1 class="logo">🎶Vortex</h1>
+
+             <select name="" id="select_indioma">
+                <option value="en-US" selected>en-US</option>
+                <option value="pt-BT">pt-BT</option>
+             </select>
+        </header>
+
+
+        <main>
+            <div class="esquerda">
+                <h2>Welcome! Please sing in.</h2>
+                <form action="assinatura.html">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="you@gmail.com">
+                    
+                    <label for="senha">Senha</label>
+                    <input type="text" id="senha" name="senha" placeholder="@you3222">
+
+                    
+                    <div>
+                        <button type="submit" class="submit">Sing in</button>
+                        <a href="#planos" class="submit">Cadastrar</a>
+                    </div>
+                </form>
+            </div>
+            <div class="direita">
+                <h1>Treine Sua Equipe de Forma Rápida e Eficiente</h1>
+                <h3>Hospede videoaulas - organize cursos - faça reuniões de treinamento ao vivo com videochamadas.</h3>
+            </div>
+        </main>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Apenas 3 passos simples</h1>
+        <p>Simples de usar - sem complicação.</p>
+
+        <div class="passoApasso">
+            <div class="passos">
+                <div class="dic">
+                    <div class="circle">1</div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/4319/4319100.png" alt="" class="ImgPassos">
+                </div>
+                <p class="descritionPasso">Crie sua comunidade exclusiva, onde pode gerenciar todos os cursos e treinamentos especializados.</p>
+            </div>
+            <span class="linha"></span>
+            <div class="passos">
+                <div class="dic">
+                    <div class="circle">2</div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/11268/11268870.png" alt="" class="ImgPassos">
+                </div>
+                <p class="descritionPasso">Selecione cursos específicos que atendam às necessidades da sua equipe. Todos os cursos são customizáveis.</p>
+            </div>
+            <span class="linha"></span>
+            <div class="passos">
+                <div class="dic">
+                    <div class="circle">3</div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/752/752646.png" alt="" class="ImgPassos">
+                </div>
+                <p class="descritionPasso">Monitore o progresso dos colaboradores em tempo real. E manitori o desempenho individual e coletivo.</p>
+            </div>
+        </div>
+
+        <a href="#planos" class="ctaButton">Ver Planos</a>
+    </section>
+
+
+
+
+
+    <!-- Planos de Assinatura -->
+    <section id="planos" class="planos">
+        <div class="plano">
+            <h2>Plano Básico</h2>
+            <p class="preco">Gratis</p>
+            <ul>
+                <li>Acesso a plataforma</li>
+                <li>Download de músicas</li>
+                <li>Criação de até 3 playlists</li>
+            </ul>
+            <button class="btn_plano_assinatura" value="basico">Assinar Agora</button>
+        </div>
+        <div class="plano destaque">
+            <h2>Plano Premium</h2>
+            <p class="preco premium">R$ 49/mês</p>
+            <ul>
+                <li>O basico +</li>
+                <li>Criação de playlists ilimitadas</li>
+                <li>Escuta offline sem anúncios</li>
+                <li>Recomendação de músicas</li>
+                <li>Suporte dedicado 24/7</li>
+            </ul>
+            <button class="btn_plano_assinatura" value="premium">Assinar Agora</button>
+        </div>
+        <div class="plano">
+            <h2>Plano Empresarial</h2>
+            <p class="preco">R$ 699/mês</p>
+            <ul>
+                <li>O basico / O premium +</li>
+                <li>Toda equipe da 🎶Vortex</li>
+                <li>Acesso para 100 contas de funcionários</li>
+                <li>Suporte dedicado 24/7</li>
+                <li>Suporte dedicado 24/7</li>
+            </ul>
+            <a href="assinatura.html" class="btn_plano_assinatura" value="Empresarial">Assinar Agora</a>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="diferenciais">
+        <h2>Diferenciais dos Planos</h2>
+        <p>Compare os benefícios exclusivos de cada plano e escolha o melhor para você.</p>
+    </section>
+
+    <!-- Testemunhos -->
+    <section id="testemunhos" class="testemunhos">
+        <h2>O que nossos clientes dizem</h2>
+        <p>"Serviço excelente! Recomendo a todos!" - Cliente Satisfeito</p>
+        <p>"A melhor escolha que fiz para minha empresa." - Outro Cliente Satisfeito</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
