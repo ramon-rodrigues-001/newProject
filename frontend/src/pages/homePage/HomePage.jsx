@@ -14,7 +14,7 @@ function HomePage() {
     <>
     <div className={styles.container}>
     <section className={styles.above_the_fold}>
-      <video autoPlay muted loop class={styles.videoBackground}>
+      <video autoPlay muted loop className={styles.videoBackground}>
         <source src="../../public/Fim!.mp4" type="video/mp4" />
         Seu navegador não suporta o vídeo.
       </video>
