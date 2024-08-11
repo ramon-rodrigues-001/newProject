@@ -22,8 +22,8 @@ function HomePage() {
       <header className={styles.headerHome}>
         <h1 className={styles.logo}>🎶Vortex</h1>
         <select id={styles.select_indioma}>
-          <option value="en-US" selected>en-US</option>
-          <option value="pt-BT">pt-BT</option>
+          <option value="en-US" selected>Inglês</option>
+          <option value="pt-BT">Portugues</option>
         </select>
       </header>
 
@@ -101,8 +101,8 @@ function HomePage() {
         <p className={styles.preco}>Gratis</p>
         <ul>
           <li>Acesso a plataforma</li>
-          <li>Download de músicas</li>
-          <li>Criação de até 3 playlists</li>
+          <li>Participar de vídeos chamadas</li>
+          <li>Criar perfil de funcionario</li>
         </ul>
         < ButtonVerde event={confirmarPlano} link='./formulario-assinatura' text='Sem Compromisso' block={true}  />
       </div>
@@ -112,9 +112,9 @@ function HomePage() {
         <p className={styles.preco}>R$ 49/mês</p>
         <ul>
           <li>O basico +</li>
-          <li>Criação de playlists ilimitadas</li>
-          <li>Escuta offline sem anúncios</li>
-          <li>Recomendação de músicas</li>
+          <li>Hospedagem de Cursos</li>
+          <li>Organizar reoniões</li>
+          <li>Até 100 contas de Alunos</li>
         </ul>
         < ButtonVerde event={confirmarPlano} link='./formulario-assinatura' text='Assinar Agora' block={true} />
       </div>
@@ -124,8 +124,8 @@ function HomePage() {
         <p className={styles.preco}>R$ 99/mês</p>
         <ul>
           <li>O basico / O premium +</li>
-          <li>Acesso para 10 contas</li>
-          <li>Suporte dedicado 24/7</li>
+          <li>numero de contas <strong>ilimitado</strong></li>
+          <li>Suporte dedicado</li>
         </ul>
         < ButtonVerde event={confirmarPlano} link='./formulario-assinatura' text='Assinar Agora' block={true} />
       </div>
