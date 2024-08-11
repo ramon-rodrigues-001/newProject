@@ -1,3 +1,6 @@
+
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=100&section=header&animation=blinking&fontColor=fff&fontSize=50"/>
+
 # **Project Vortex**
 
 ![Project Logo](https://via.placeholder.com/150) > **PRECISO DE UMA LOGO**<!-- Substitua pelo logo do projeto -->
@@ -47,3 +50,5 @@ target="_blank">Ver teste rodando<a/>
    ```bash
    npm run dev
 
+
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=00bfbf&height=120&section=footer"/>
