@@ -101,7 +101,7 @@ function HomePage() {
         <p className={styles.preco}>Gratis</p>
         <ul>
           <li>Acesso a plataforma</li>
-          <li>Participar de vídeos chamadas</li>
+          <li>Uma semana de teste</li>
           <li>Criar perfil de funcionario</li>
         </ul>
         < ButtonVerde event={confirmarPlano} link='./formulario-assinatura' text='Sem Compromisso' block={true}  />
@@ -111,21 +111,21 @@ function HomePage() {
         <h2 className={styles.titlePlanos}>Plano Premium</h2>
         <p className={styles.preco}>R$ 49/mês</p>
         <ul>
-          <li>O basico +</li>
-          <li>Hospedagem de Cursos</li>
-          <li>Organizar reoniões</li>
-          <li>Até 100 contas de Alunos</li>
+          <li>40 horas de curso</li>
+          <li>Assistente chatGpt-4</li>
+          <li>Projetos praticos</li>
+          <li>Professores formados</li>
         </ul>
         < ButtonVerde event={confirmarPlano} link='./formulario-assinatura' text='Assinar Agora' block={true} />
       </div>
 
       <div className={styles.plano}>
-        <h2 className={styles.titlePlanos}>Plano Empresarial</h2>
-        <p className={styles.preco}>R$ 99/mês</p>
+        <h2 className={styles.titlePlanos}>Acesso Vitalício</h2>
+        <p className={styles.preco}>R$ 450,00</p>
         <ul>
-          <li>O basico / O premium +</li>
-          <li>numero de contas <strong>ilimitado</strong></li>
-          <li>Suporte dedicado</li>
+          <li>O plano premium +</li>
+          <li>Acesso <strong>ilimitado</strong></li>
+          <li>Futuras atualizaçõe</li>
         </ul>
         < ButtonVerde event={confirmarPlano} link='./formulario-assinatura' text='Assinar Agora' block={true} />
       </div>
